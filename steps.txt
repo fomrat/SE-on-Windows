@@ -1,0 +1,25 @@
+Work in the terminal window from now on, and follow the instructions in: https://standardebooks.org/contribute/producing-an-ebook-step-by-step/
+1. git clone https://github.com/standardebooks/tools.git
+    => (right-click rather than Control-v to paste)
+    - now we have the README
+
+    What follows is a modified version of the Ubuntu instructions in README.md.
+        => to view that file, open [winDrive]\Users\[userId]\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_[uniqueId]\LocalState\rootfs\home\[userId]\tools\README.md
+        => ***you can read a file that's in rootfs with a Win10 tool, but never write to (or change) any rootfs file with a Win10 tool***
+
+2. sudo apt-get install python3-setuptools
+3. sudo apt-get update
+5. sudo apt install -y python3-pip python3-dev libxml2-dev libxslt1-dev zlib1g-dev libxml2-utils librsvg2-bin libimage-exiftool-perl imagemagick epubcheck default-jre inkscape calibre curl git
+    - this takes about an hour 12:40pm
+6: mkdir -p ~/.fonts/
+   curl -s -o ~/.fonts/LeagueSpartan-Bold.otf "https://raw.githubusercontent.com/theleagueof/league-spartan/master/LeagueSpartan-Bold.otf"
+   curl -s -o ~/.fonts/OFLGoudyStM.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM.otf"
+   curl -s -o ~/.fonts/OFLGoudyStM-Italic.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM-Italic.otf"
+   sudo fc-cache -fv
+   sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+   pip3 install -r ./tools/requirements.txt
+   sudo apt-get update
+   python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndictools.install('en_US')\")"
+   sudo apt install python-pip
+   sudo -H pip install gitpython
+7. resume step 2 in https://standardebooks.org/contribute/producing-an-ebook-step-by-step
