@@ -1,4 +1,4 @@
-## Windows 10 build 1709 (cmd ver 10.0.16299.309) users
+## Windows 10 users (build 1709 / cmd ver 10.0.16299.309)
 
 ```shell
 # Clone the tools repo
