@@ -11,8 +11,11 @@ sudo apt install -y python3-pip python3-dev libxml2-dev libxslt1-dev zlib1g-dev 
 
 # Install required fonts
 mkdir -p ~/.fonts/
+
 curl -s -o ~/.fonts/LeagueSpartan-Bold.otf "https://raw.githubusercontent.com/theleagueof/league-spartan/master/LeagueSpartan-Bold.otf"
+
 curl -s -o ~/.fonts/OFLGoudyStM.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM.otf"
+
 curl -s -o ~/.fonts/OFLGoudyStM-Italic.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM-Italic.otf"
 
 # Refresh the local font cache
