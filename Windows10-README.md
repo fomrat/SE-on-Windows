@@ -1,6 +1,6 @@
 ## Windows 10 users (build 1709 / cmd ver 10.0.16299.309)
 
-#update the installation -- 15.6 MB
+# update the installation -- 15.6 MB
 sudo apt-get update
 
 # Clone the tools repo
