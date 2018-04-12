@@ -32,6 +32,7 @@ python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndic
 
 # Install python pip and git -- the SE build will fail without these
 sudo apt install python-pip
+
 sudo -H pip install gitpython
     
 ```
