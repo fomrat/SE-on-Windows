@@ -31,40 +31,40 @@ sudo apt-get update
 
 4: install dependencies -- this will take about an hour to run
 
-5: sudo apt install -y python3-pip python3-dev libxml2-dev libxslt1-dev zlib1g-dev libxml2-utils librsvg2-bin libimage-exiftool-perl imagemagick epubcheck default-jre inkscape calibre curl git
+sudo apt install -y python3-pip python3-dev libxml2-dev libxslt1-dev zlib1g-dev libxml2-utils librsvg2-bin libimage-exiftool-perl imagemagick epubcheck default-jre inkscape calibre curl git
 
-6: install required fonts -- these lines can be all pasted into the terminal window together
+5: install required fonts -- these lines can be all pasted into the terminal window together
 
 mkdir -p ~/.fonts/
 curl -s -o ~/.fonts/LeagueSpartan-Bold.otf "https://raw.githubusercontent.com/theleagueof/league-spartan/master/LeagueSpartan-Bold.otf"
 curl -s -o ~/.fonts/OFLGoudyStM.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM.otf"
 curl -s -o ~/.fonts/OFLGoudyStM-Italic.otf "https://raw.githubusercontent.com/theleagueof/sorts-mill-goudy/master/OFLGoudyStM-Italic.otf"
 
-7: rebuild the local font cache
+6: rebuild the local font cache
 
 sudo fc-cache -fv
 
-8: install python-dev and dependencies
+7: install python-dev and dependencies
 
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
-9: install python dependencies
+8: install python dependencies
 
 pip3 install -r ./tools/requirements.txt
 sudo apt-get update
 
-10: install hyphenation dictionaries for the pyhyphen library
+9: install hyphenation dictionaries for the pyhyphen library
 
 python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndictools.install('en_US')\")"
 
-11: install python pip and git
+10: install python pip and git
 
 sudo apt install python-pip
 sudo -H pip install gitpython
 
-12: at this point we follow steps 2 and 3 in https://standardebooks.org/contribute/producing-an-ebook-step-by-step
+11: at this point we follow steps 2 and 3 in https://standardebooks.org/contribute/producing-an-ebook-step-by-step
 
-13: for step 4, we diverge. We're going to create a "home" directory in the Windows filesystem in which to store our SE data.
+12: for step 4, we diverge. We're going to create a "home" directory in the Windows filesystem in which to store our SE data.
 
 I suggest a folder called GitHub. I use C:\Users\brian\Documents\GitHub.
 
