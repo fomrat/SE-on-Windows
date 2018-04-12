@@ -6,8 +6,7 @@ sudo apt-get update
 # Clone the tools repo
 git clone https://github.com/standardebooks/tools.git
 
-# Install some pre-flight dependencies
-# lxml requires the following packages for its pip build process: python3-dev libxml2-dev libxslt1-dev zlib1g-dev
+# Install some dependencies
 sudo apt install -y python3-pip python3-dev libxml2-dev libxslt1-dev zlib1g-dev libxml2-utils librsvg2-bin libimage-exiftool-perl imagemagick epubcheck default-jre inkscape calibre curl git
 
 # Install required fonts
@@ -19,7 +18,7 @@ curl -s -o ~/.fonts/OFLGoudyStM-Italic.otf "https://raw.githubusercontent.com/th
 # Refresh the local font cache
 sudo fc-cache -fv
 
-# Install python-dev and dependencies -- Win10 build doesn't have these, so we can't do requirements.txt yet. Definitely.
+# Install python-dev and dependencies -- Win10 build doesn't have these
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
     
 # Install python dependencies
